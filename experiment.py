@@ -20,6 +20,7 @@ server = app.server
 
 app.layout = html.Div([
     html.H1("Snell's Law Visualization"),
+    html.P("Explore how light refracts through different mediums. Created by Ameya Sanjanita."),
     dcc.Dropdown(
         id='medium1',
         options=[{'label': key, 'value': value} for key, value in refractive_indices.items()],
